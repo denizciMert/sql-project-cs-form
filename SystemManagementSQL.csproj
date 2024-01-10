@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3402B29D-84C5-4390-B435-9A442111AFFB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SystemManagementSQL</RootNamespace>
+    <AssemblyName>SystemManagementSQL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.5\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbManager.cs" />
+    <Compile Include="DropDowns.cs" />
+    <Compile Include="GradesAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GradesAddForm.Designer.cs">
+      <DependentUpon>GradesAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradesDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GradesDetailForm.Designer.cs">
+      <DependentUpon>GradesDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradesManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GradesManageForm.Designer.cs">
+      <DependentUpon>GradesManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorsAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstructorsAddForm.Designer.cs">
+      <DependentUpon>InstructorsAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorsDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstructorsDetailForm.Designer.cs">
+      <DependentUpon>InstructorsDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorsManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstructorsManageForm.Designer.cs">
+      <DependentUpon>InstructorsManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementSystemDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManagementSystemDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryDBTables.cs" />
+    <Compile Include="SchoolDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchoolDetailForm.Designer.cs">
+      <DependentUpon>SchoolDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolManageCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchoolManageCForm.Designer.cs">
+      <DependentUpon>SchoolManageCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolManageFForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchoolManageFForm.Designer.cs">
+      <DependentUpon>SchoolManageFForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartUpProgramForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartUpProgramForm.Designer.cs">
+      <DependentUpon>StartUpProgramForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsAddForm.Designer.cs">
+      <DependentUpon>StudentsAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsManageForm.Designer.cs">
+      <DependentUpon>StudentsManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsDetailForm.Designer.cs">
+      <DependentUpon>StudentsDetailForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GradesAddForm.resx">
+      <DependentUpon>GradesAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradesDetailForm.resx">
+      <DependentUpon>GradesDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradesManageForm.resx">
+      <DependentUpon>GradesManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstructorsAddForm.resx">
+      <DependentUpon>InstructorsAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstructorsDetailForm.resx">
+      <DependentUpon>InstructorsDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstructorsManageForm.resx">
+      <DependentUpon>InstructorsManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SchoolDetailForm.resx">
+      <DependentUpon>SchoolDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchoolManageCForm.resx">
+      <DependentUpon>SchoolManageCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchoolManageFForm.resx">
+      <DependentUpon>SchoolManageFForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartUpProgramForm.resx">
+      <DependentUpon>StartUpProgramForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsAddForm.resx">
+      <DependentUpon>StudentsAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsDetailForm.resx">
+      <DependentUpon>StudentsDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsManageForm.resx">
+      <DependentUpon>StudentsManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ManagementSystemDBDataSet.xsc">
+      <DependentUpon>ManagementSystemDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ManagementSystemDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ManagementSystemDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ManagementSystemDBDataSet.xss">
+      <DependentUpon>ManagementSystemDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CompanyLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usernamepic.png" />
+    <None Include="Resources\passwordpic.png" />
+    <Content Include="Resources\SchoolLogo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
